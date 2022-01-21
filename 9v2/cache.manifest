@@ -1,0 +1,20 @@
+CACHE MANIFEST 
+
+CACHE: 
+exploit.js
+frontend.js
+goldhen_2.0b2.js
+img.jpg
+index.html
+int64.js
+kexploit.js
+malloc.js
+netcat.js
+relocator.js
+restore.js
+rop.js
+rop2.js
+style.css
+syscalls.js
+syscalls2.js
+webkit.js
