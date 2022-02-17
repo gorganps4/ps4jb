@@ -16,7 +16,7 @@ function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="ه�
 <hr>
 <br>
 <h1 style="font-size:25px;color:yellow;">برای فعال ساری هک، روی دکمه Goldhen کلیک کنید.</h1>
-<button class="btn" onclick=load_goldhen2b2()> GoldHEN 2.0b2 </button>
+<button class="btn" onclick=load_goldhen211()> GoldHEN v2.1.1 </button>
 <br>
 <h1 style="font-size:28px;text-align:center;">تا 10 ثانیه بعد از کلیک کردن روی دکمه بالا پیغامی برایتان ظاهر می شود مبنی بر اینکه درایو فلش usb را وارد کنید. بعد از اینکه فلش را وارد کردید<br> بعد از چند ثانیه اعلانی سفید رنگ در گوشه سمت چپ صفحه ظاهر می شود که اون موقع باید دکمه ok را کلیک کنید که بعدش اعلانی زرد رنگ گوشه چپ<br> برایتان ظاهر می شود که یعنی پروسه هک با موفقیت انجام شده که در انتها بعد از این پیغام میتوانید از صفحه هک خارج شده به منو بازی ها و بازی ها<br> را اجرا کنید. هر کدام از مراحل ذکر شده انجام نشد و یا در انتها پیغام زرد رنگ نیامد فلش را درآورده و دستگاه را خاموش کرده دوباره روشن کنید و مراحل را طی کنید.</h1>
 <br><br>
@@ -34,147 +34,9 @@ for(var i=40; i<=79; i++){
 tempC.value=60;
 </script>
 <script>
-function load_goldhen2b2(){
-var script = document.createElement('script');script.src = "goldhen_2.0b2.js";document.getElementsByTagName('head')[0].appendChild(script);
+function load_goldhen211(){
+var script = document.createElement('script');script.src = "goldhen_2.1.1.js";document.getElementsByTagName('head')[0].appendChild(script);
 msgs.innerHTML="در حال اجرای هک.. لطفا صبر کنید !!!";
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_binloader(){
-msgs.innerHTML="Launching Bin Loader... Please Wait !!!";
-run_jb = "binloader";
-setTimeout(poc,1500);
-}
-
-function load_todex(){
-var script = document.createElement('script');script.src = "todex.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading ToDex... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_dumper(){
-var script = document.createElement('script');script.src = "dumper.js";document.getElementsByTagName('head')[0].appendChild(script);
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_ftp(){
-var script = document.createElement('script');script.src = "ftp.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading FTP... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_app2usb(){
-var script = document.createElement('script');script.src = "app2usb.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading App2USB... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_dbackup(){
-var script = document.createElement('script');script.src = "backup.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading DB Backup... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_dbrestore(){
-var script = document.createElement('script');script.src = "restore.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading DB Restore... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_enablebUpdates(){
-var script = document.createElement('script');script.src = "enable-updates.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Enable Updates... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_disableUpdates(){
-var script = document.createElement('script');script.src = "disable-updates.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Disable Updates... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_historyBlocker(){
-var script = document.createElement('script');script.src = "history-blocker.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading History Blocker... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_kernelDump(){
-var script = document.createElement('script');script.src = "kernel-dumper.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Kernel Dumper... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_moduleDump(){
-var script = document.createElement('script');script.src = "module-dumper.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Module Dumper... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_ps4debug(){
-var script = document.createElement('script');script.src = "ps4debug.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading PS4 Debug... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_disbAslr(){
-var script = document.createElement('script');script.src = "disable-aslr.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Disable ASLR... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_exitidu(){
-var script = document.createElement('script');script.src = "exit-idu.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Exit IDU... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_rifRen(){
-var script = document.createElement('script');script.src = "rif-renamer.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading RIF Renamer... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_permUart(){
-var script = document.createElement('script');script.src = "permanent-uart.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Permanent UART... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_webrte(){
-var script = document.createElement('script');script.src = "webrte.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading WebRTE... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_toolbox(){
-var script = document.createElement('script');script.src = "Orbis-Toolbox-900.js";document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Orbis-Toolbox... Please Wait !!!"
-run_jb = "payload";
-setTimeout(poc,1500);
-}
-
-function load_fanthreshold(){
-var script = document.createElement('script');script.src = "fan-threshold.js";localStorage.setItem('fanthreshold', tempC.value);document.getElementsByTagName('head')[0].appendChild(script);
-msgs.innerHTML="Loading Fan Threshold... Please Wait !!!"
 run_jb = "payload";
 setTimeout(poc,1500);
 }
