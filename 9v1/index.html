@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest"><head>
+<title>PS4 9.00 FW Host by Mohsen</title>
+<link rel="stylesheet" href="style.css">
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+</head>
+<body>
+<script>
+    function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="درحال ذخیره سازی هاست: " + Percent + "%";}
+    function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="هاست با موفقیت ذخیره شد ✔";},1000);setTimeout(function(){window.msgs.innerHTML="نت را قطع کرده و دوباره این صفحه را باز کنید ...";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
+</script>
+<h1 id="msgs">جیلبریک ps4 ورژن 9 - Gorgan Ps4</h1>
+<hr>
+<br>
+<h1 style="font-size:18px;color:yellow;">برای فعال سازی هک، روی دکمه Goldhen کلیک کنید.</h1>
+<button class="btn" onclick=load_goldhen222()> GoldHEN v2.2.2 </button>
+<br>
+<h1 style="font-size:28px;text-align:center;">تا 10 ثانیه بعد از کلیک کردن روی دکمه بالا پیغامی برایتان ظاهر می شود مبنی بر اینکه درایو فلش usb را وارد کنید. بعد از اینکه فلش را وارد کردید<br> بعد از چند ثانیه اعلانی سفید رنگ در گوشه سمت چپ صفحه ظاهر می شود که اون موقع باید دکمه ok را کلیک کنید که بعدش اعلانی زرد رنگ گوشه چپ<br> برایتان ظاهر می شود که یعنی پروسه هک با موفقیت انجام شده که در انتها بعد از این پیغام میتوانید از صفحه هک خارج شده به منو بازی ها و بازی ها<br> را اجرا کنید. هر کدام از مراحل ذکر شده انجام نشد و یا در انتها پیغام زرد رنگ نیامد فلش را درآورده و دستگاه را خاموش کرده دوباره روشن کنید و مراحل را طی کنید.</h1>
+<br><br>
+<h1 style="font-size:30px;color:yellow;"> هشداااار: حتما بعد از اجرای موفق هک یا شکست عملیات، درایور فلش را از درگاه usb دستگاه خارج نموده و به هیچ عنوان فلش روی دستگاه باقی نمونه.</h1>
+<hr style="margin-top: 86px;">
+<h1 style="margin-top: 15px; color: yellow;">  طراحی و کدنویسی: محسن فروزنده 7066 278 0911 ***  Gorgan Ps4</a></h1>
+<br>
+<script>
+for(var i=40; i<=75; i=i+5){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
+<script>
+function load_goldhen222(){
+msgs.innerHTML="در حال اجرای هک... لطفا صبر کنید !!!";
+PLfile = "goldhen_2.2.2.bin";
+run_jb = "payload";
+setTimeout(poc,1500);
+}
+</script>
+</body>
+</html>
